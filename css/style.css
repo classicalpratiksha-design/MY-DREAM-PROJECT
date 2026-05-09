@@ -1,0 +1,162 @@
+/* Basic styles for Pratiksha Musical website */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.features {
+    padding: 2rem 0;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1 1 300px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about, .courses, .teachers, .gallery, .contact {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.teacher-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.teacher {
+    flex: 1 1 200px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.teacher img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-grid img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-info {
+    margin-bottom: 2rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .feature-grid, .teacher-grid {
+        flex-direction: column;
+    }
+}
